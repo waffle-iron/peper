@@ -145,16 +145,9 @@ button.color-button,a.color-button {
 	@include transition(all 600ms $easeOutExpo);
 	float: left;
 	position: relative;
-	text-decoration: none;
+	text-decoration: none !important;
 	text-align: center;
 	@include transform(translateZ(0));
-
-    a {
-        text-decoration: none;
-        color: inherit;
-        position: relative;
-        z-index: 100;
-    }
 
 	&.button-block {
 		width: 100%;
