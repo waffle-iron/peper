@@ -18,9 +18,9 @@
                 <nav-list to="/components/tabs"><icon name="cash"></icon> Tabs UI</nav-list>
             </span>
         </nav-list>
-        <nav-list to="/gold" class="nav-item">
+        <!-- <nav-list to="/gold" class="nav-item">
             <icon name="cellphone-link"></icon> Gold System
-        </nav-list>
+        </nav-list> -->
     </side-navigation>
 </template>
 
