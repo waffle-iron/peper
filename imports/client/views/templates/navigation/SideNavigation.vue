@@ -12,8 +12,8 @@
         <nav-list :sublist="true">
             <icon name="view-quilt"></icon> Components
             <span slot="sublist">
-                <nav-list to="/components/avatar"><icon name="cash"></icon> Avatar UI</nav-list>
-                <nav-list to="/components/button"><icon name="cash"></icon> Button UI</nav-list>
+                <nav-list to="/components/avatar"><icon name="account-box"></icon> Avatar UI</nav-list>
+                <nav-list to="/components/button"><icon name="crop-landscape"></icon> Button UI</nav-list>
                 <nav-list to="/components/card"><icon name="cash"></icon> Card UI</nav-list>
                 <nav-list to="/components/tabs"><icon name="cash"></icon> Tabs UI</nav-list>
             </span>

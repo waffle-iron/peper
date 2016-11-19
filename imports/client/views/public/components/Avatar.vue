@@ -14,7 +14,7 @@
         <transition-block :show="show">
             <div style="display:table; margin: 0 auto;">
                 <avatar text="Nizul Zaim" style="float:left; margin-left: 2px; margin-right: 2px;"><img src="https://placeimg.com/48/48/people/1" /></avatar>
-                <avatar text="Nizul Zaim" style="float:left; margin-left: 2px; margin-right: 2px;"></avatar>
+                <avatar text="nizul Zaim" style="float:left; margin-left: 2px; margin-right: 2px;"></avatar>
                 <avatar text="Lili Madiha" style="float:left; margin-left: 2px; margin-right: 2px;"></avatar>
             </div>
         </transition-block>

@@ -1,6 +1,7 @@
 <template>
     <div class="peper-avatar">
-        <div class="font-headline font-light no-margin" style="line-height: 48px;">{{firstChar}}</div>
+        <div class="font-headline font-light no-margin" style="line-height: 48px;">{{firstChar}}
+        </div>
         <slot></slot>
     </div>
 </template>
@@ -19,7 +20,7 @@
         computed: {
             firstChar() {
                 if (this.text) {
-                    return this.text.charAt(0);
+                    return this.text.toUpperCase().charAt(0);
                 }
                 return null;
             },
