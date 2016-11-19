@@ -36,7 +36,7 @@ Router.configure(router => {
             name: "ComponentsButton",
             meta: { fixToolbar: true },
             components: {
-                default: Index,
+                default: ComponentsButton,
                 toolbar: Toolbar,
                 navigation: SideNavigation,
             }
