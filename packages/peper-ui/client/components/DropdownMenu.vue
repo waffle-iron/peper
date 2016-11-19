@@ -1,5 +1,5 @@
 <template>
-<div class="peper-menu">
+<div class="peper-menu showOnTrigger">
     <slot></slot>
 </div>
 </template>
@@ -26,8 +26,8 @@ export default {
         let divideBy = 1;
         let gap = 0;
 
-        if (self.openOn !== "always") {
-            $thisEl.addClass('showOnTrigger');
+        if (self.openOn === "always") {
+            $thisEl.removeClass("showOnTrigger");
         }
 
         if (self.makeCenter !== undefined) {
