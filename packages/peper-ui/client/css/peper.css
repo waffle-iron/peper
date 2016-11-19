@@ -4237,37 +4237,37 @@ section {
   src: local("Roboto Black Italic"), local("Roboto-BlackItalic"), url(../fonts/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
 .color-primary {
-  color: #1f698e !important; }
+  color: #2196f3 !important; }
 
 .color-primary-50 {
-  color: #c4e3f2 !important; }
+  color: #e3f2fd !important; }
 
 .color-primary-100 {
   color: theme-primary-100 !important; }
 
 .color-primary-200 {
-  color: #57afda !important; }
+  color: #90caf9 !important; }
 
 .color-primary-300 {
-  color: #2a8ec0 !important; }
+  color: #64b5f6 !important; }
 
 .color-primary-400 {
-  color: #247ca7 !important; }
+  color: #42a5f5 !important; }
 
 .color-primary-500 {
-  color: #1f698e !important; }
+  color: #2196f3 !important; }
 
 .color-primary-600 {
-  color: #1a5675 !important; }
+  color: #1e88e5 !important; }
 
 .color-primary-700 {
-  color: #14445c !important; }
+  color: #1976d2 !important; }
 
 .color-primary-800 {
-  color: #0f3143 !important; }
+  color: #1565c0 !important; }
 
 .color-primary-900 {
-  color: #091f2a !important; }
+  color: #0d47a1 !important; }
 
 .color-accent {
   color: #e91e63 !important; }
@@ -5128,37 +5128,37 @@ section {
   color: #ffffff !important; }
 
 .background-theme {
-  background: #1f698e !important; }
+  background: #2196f3 !important; }
 
 .background-theme-50 {
-  background: #c4e3f2 !important; }
+  background: #e3f2fd !important; }
 
 .background-theme-100 {
-  background: #85c5e4 !important; }
+  background: #bbdefb !important; }
 
 .background-theme-200 {
-  background: #57afda !important; }
+  background: #90caf9 !important; }
 
 .background-theme-300 {
-  background: #2a8ec0 !important; }
+  background: #64b5f6 !important; }
 
 .background-theme-400 {
-  background: #247ca7 !important; }
+  background: #42a5f5 !important; }
 
 .background-theme-500 {
-  background: #1f698e !important; }
+  background: #2196f3 !important; }
 
 .background-theme-600 {
-  background: #1a5675 !important; }
+  background: #1e88e5 !important; }
 
 .background-theme-700 {
-  background: #14445c !important; }
+  background: #1976d2 !important; }
 
 .background-theme-800 {
-  background: #0f3143 !important; }
+  background: #1565c0 !important; }
 
 .background-theme-900 {
-  background: #091f2a !important; }
+  background: #0d47a1 !important; }
 
 .background-theme-accent {
   background: #e91e63 !important; }
@@ -6618,9 +6618,9 @@ button.raised-button, a.raised-button {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
   button.raised-button.primary, a.raised-button.primary {
     color: #ffffff;
-    background: #1f698e; }
+    background: #2196f3; }
     button.raised-button.primary.hover, a.raised-button.primary.hover {
-      background: #1a5675; }
+      background: #1e88e5; }
   button.raised-button.accent, a.raised-button.accent {
     color: #212121;
     background: #e91e63; }
@@ -6645,7 +6645,7 @@ button.flat-button, a.flat-button {
   button.flat-button.hover, button.flat-button:focus, a.flat-button.hover, a.flat-button:focus {
     background: rgba(0, 0, 0, 0.1); }
   button.flat-button.primary, a.flat-button.primary {
-    color: #1f698e; }
+    color: #2196f3; }
   button.flat-button.accent, a.flat-button.accent {
     color: #e91e63; }
   button.flat-button.white, a.flat-button.white {
@@ -6662,7 +6662,7 @@ button.color-button, a.color-button {
   background: #212121;
   color: #ffffff; }
   button.color-button.primary, a.color-button.primary {
-    background: #1f698e; }
+    background: #2196f3; }
   button.color-button.accent, a.color-button.accent {
     background: #e91e63; }
   button.color-button.white, a.color-button.white {
@@ -6671,7 +6671,7 @@ button.color-button, a.color-button {
   button.color-button.hover, button.color-button:focus, a.color-button.hover, a.color-button:focus {
     background: #424242; }
     button.color-button.hover.primary, button.color-button:focus.primary, a.color-button.hover.primary, a.color-button:focus.primary {
-      background: #1a5675; }
+      background: #1e88e5; }
     button.color-button.hover.accent, button.color-button:focus.accent, a.color-button.hover.accent, a.color-button:focus.accent {
       background: #d81b60; }
     button.color-button.hover.white, button.color-button:focus.white, a.color-button.hover.white, a.color-button:focus.white {
@@ -6685,7 +6685,7 @@ button.color-button, a.color-button {
     box-shadow: none;
     pointer-events: none; }
     button.color-button:disabled.primary, button.color-button.disabled.primary, button.color-button.disabled:focus.primary, button.color-button.disabled.hover.primary, a.color-button:disabled.primary, a.color-button.disabled.primary, a.color-button.disabled:focus.primary, a.color-button.disabled.hover.primary {
-      background: #2a8ec0; }
+      background: #64b5f6; }
     button.color-button:disabled.accent, button.color-button.disabled.accent, button.color-button.disabled:focus.accent, button.color-button.disabled.hover.accent, a.color-button:disabled.accent, a.color-button.disabled.accent, a.color-button.disabled:focus.accent, a.color-button.disabled.hover.accent {
       background: #f06292; }
     button.color-button:disabled.white, button.color-button.disabled.white, button.color-button.disabled:focus.white, button.color-button.disabled.hover.white, a.color-button:disabled.white, a.color-button.disabled.white, a.color-button.disabled:focus.white, a.color-button.disabled.hover.white {
@@ -6887,9 +6887,9 @@ button.color-button, a.color-button {
     box-shadow: none;
     pointer-events: none; }
   .peper-icon-button.primary {
-    color: #1f698e; }
+    color: #2196f3; }
     .peper-icon-button.primary .ripple-circle {
-      background: #57afda; }
+      background: #90caf9; }
     .peper-icon-button.primary:hover, .peper-icon-button.primary.hover, .peper-icon-button.primary:focus {
       background: rgba(63, 81, 181, 0.2); }
     .peper-icon-button.primary.pressed {
@@ -7069,7 +7069,7 @@ button.color-button, a.color-button {
   .peper-side-navigation .peper-side-navigation-profile {
     width: 100%;
     height: 96px;
-    background: #2a8ec0;
+    background: #64b5f6;
     padding: 24px 16px;
     background-image: url(/packages/skynightz93_peper-ui/client/img/back1.png);
     background-position: center;
@@ -7179,11 +7179,11 @@ button.color-button, a.color-button {
         margin-bottom: 15px;
         background: #eeeeee; }
       .peper-side-navigation .peper-side-navigation-content .nav-item.router-link-active .nav-list {
-        color: #1f698e; }
+        color: #2196f3; }
         .peper-side-navigation .peper-side-navigation-content .nav-item.router-link-active .nav-list .mdi {
-          color: #1f698e; }
+          color: #2196f3; }
         .peper-side-navigation .peper-side-navigation-content .nav-item.router-link-active .nav-list .chevron svg {
-          fill: #1f698e; }
+          fill: #2196f3; }
       .peper-side-navigation .peper-side-navigation-content .nav-item.router-link-active .ripple-circle {
         background: rgba(63, 81, 181, 0.2) !important; }
   .peper-side-navigation.active {
