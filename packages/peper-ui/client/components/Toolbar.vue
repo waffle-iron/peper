@@ -81,8 +81,6 @@ export default {
                                                   elementToTrackShadow.outerHeight() -
                                                   $el.outerHeight();
                 }
-                shadowResizeWindows();
-
                 $(window).on("resize", function() {
                     shadowResizeWindows();
                 })
@@ -90,14 +88,6 @@ export default {
                 elementToTrackShadow.resize(function() {
                     shadowResizeWindows();
                 });
-
-                //to be review because using setTimeout as temporary fix
-                self.$router.afterEach((to, from) => {
-                    window.setTimeout(function(){
-                        elementToTrackShadow = $(self.noDepthBefore);
-                        shadowResizeWindows();
-                    }, 500);
-                })
             }
 
             let elementToTrackBg = null;
@@ -117,13 +107,9 @@ export default {
                     bgResizeWindows();
                 })
 
-                //to be review because using setTimeout as temporary fix
-                self.$router.afterEach((to, from) => {
-                    window.setTimeout(function(){
-                        elementToTrackBg = $(self.noBgBefore);
-                        bgResizeWindows();
-                    }, 500);
-                })
+                elementToTrackBg.resize(function() {
+                    bgResizeWindows();
+                });
             }
 
             let elementToTrackTitle = null;
@@ -142,16 +128,13 @@ export default {
                     titleResizeWindows();
                 })
 
-                self.$router.afterEach((to, from) => {
-                    window.setTimeout(function(){
-                        elementToTrackTitle = $(self.noTitleBefore);
-                        titleResizeWindows();
-                    }, 500);
-                })
+                elementToTrackTitle.resize(function() {
+                    titleResizeWindows();
+                });
             }
 
             $el.parents(".optiscroll").on('scroll', function (ev) {
-                if (elementToTrackShadow !== null) {
+                if (elementToTrackShadow) {
                     if (ev.originalEvent.detail.scrollTop >= elementToTrackShadowFromTop ) {
                         $el.css("box-shadow", "")
                     } else {
@@ -159,7 +142,7 @@ export default {
                     }
                 }
 
-                if (elementToTrackBg !== null) {
+                if (elementToTrackBg) {
                     if (ev.originalEvent.detail.scrollTop >= elementToTrackBgFromTop ) {
                         $el.children(".peper-background").css("opacity", 1);
                     } else {
@@ -168,7 +151,7 @@ export default {
                     }
                 }
 
-                if (elementToTrackTitle !== null) {
+                if (elementToTrackTitle) {
                     if (ev.originalEvent.detail.scrollTop >= elementToTrackTitleFromTop ) {
                         $el.find(".title").css("opacity", 1);
                     } else {
