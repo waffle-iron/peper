@@ -1,12 +1,10 @@
 <template>
     <span>
-        <toolbar title="" text-color="white" background-color="purple-900" :fix="true" v-depth="1" no-depth-before="#index-header">
+        <toolbar title="Peper" text-color="white" background-color="theme" :fix="true" v-depth="1">
             <div slot="left">
-                <icon-button name="menu"  v-sidenav:click="" v-ripple></icon-button>
-                <!-- <icon-button name="menu" v-ripple v-sidenav:click=""></icon-button> -->
+                <icon-button name="menu" v-ripple v-sidenav:click=""></icon-button>
             </div>
             <div slot="right">
-                <icon-button name="cart"  v-ripple></icon-button>
                 <icon-button id="menu" name="dots-vertical"  v-ripple></icon-button>
             </div>
         </toolbar>
@@ -17,6 +15,7 @@
             <menu-item :divider="true"></menu-item>
             <menu-item icon="delete" text="Delete"></menu-item>
         </dropdown-menu>
+        <div style="height:72px"></div>
     </span>
 </template>
 

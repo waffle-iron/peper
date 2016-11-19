@@ -1,12 +1,13 @@
 import {Router} from 'meteor/akryum:vue-router2';
 import Toolbar from '/imports/client/views/templates/toolbar/Toolbar.vue';
+import ComponentToolbar from '/imports/client/views/templates/toolbar/ComponentToolbar.vue';
 import SideNavigation from '/imports/client/views/templates/navigation/SideNavigation.vue';
 import Index from '/imports/client/views/public/Index.vue';
 import ComponentsAvatar from '/imports/client/views/public/components/Avatar.vue';
 import ComponentsButton from '/imports/client/views/public/components/Button.vue';
 
-import GoldIndex from '/imports/client/views/public/gold/Index.vue';
-import GoldDefaultToolbar from '/imports/client/views/templates/toolbar/GoldDefaultToolbar.vue';
+// import GoldIndex from '/imports/client/views/public/gold/Index.vue';
+// import GoldDefaultToolbar from '/imports/client/views/templates/toolbar/GoldDefaultToolbar.vue';
 
 
 Router.configure(router => {
@@ -37,7 +38,7 @@ Router.configure(router => {
             meta: { fixToolbar: true },
             components: {
                 default: ComponentsButton,
-                toolbar: Toolbar,
+                toolbar: ComponentToolbar,
                 navigation: SideNavigation,
             }
         },
@@ -47,17 +48,7 @@ Router.configure(router => {
             meta: { fixToolbar: true },
             components: {
                 default: ComponentsAvatar,
-                toolbar: Toolbar,
-                navigation: SideNavigation,
-            }
-        },
-        {
-            path: "/gold",
-            name: "GoldIndex",
-            meta: { fixToolbar: true },
-            components: {
-                default: GoldIndex,
-                toolbar: GoldDefaultToolbar,
+                toolbar: ComponentToolbar,
                 navigation: SideNavigation,
             }
         },
