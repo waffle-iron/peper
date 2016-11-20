@@ -462,6 +462,18 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
 .hljs-selector-id {
   font-weight: bold; }
 
+peper-code copy-button {
+  position: absolute;
+  position-top: 0;
+  position-right: 0;
+  background: #666;
+  z-index: 5;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 12px;
+  height: 32px;
+  line-height: 32px; }
+
 pre {
   padding: 0;
   margin: 0; }

@@ -1,6 +1,6 @@
 <template>
     <div class="peper-code">
-        <div style="position: absolute; top: 0; right: 0; background: #666; z-index: 5; padding-left: 4px; padding-right: 4px; font-size: 12px; height: 32px; line-height: 32px">
+        <div class="copy-button">
             COPY
         </div>
         <pre><code class="html"><slot></slot></code></pre>
