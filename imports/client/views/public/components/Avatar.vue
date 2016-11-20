@@ -12,11 +12,40 @@
             </page-container>
         </div> -->
         <transition-block :show="show">
-            <div style="display:table; margin: 0 auto;">
+            <peper-doc>
+                <div slot="render" class="row center-xs">
+                    <div class="col-xs-2">
+                        <avatar text="Nizul Zaim" v-ripple style="float:left; margin-left: auto; margin-right: auto;"><img src="https://placeimg.com/48/48/people/1" /></avatar>
+                    </div>
+                    <div class="col-xs-2">
+                        <avatar text="nizul Zaim" v-ripple style="float:left; margin-left: auto; margin-right: auto;"></avatar>
+                    </div>
+                    <div class="col-xs-2">
+                        <avatar text="Lili Madiha" style="float:left; margin-left: auto; margin-right: auto;"></avatar>
+                    </div>
+                </div>
+                <span slot="label" class="row center-xs">
+                    <div class="col-xs-2">
+                        With Images
+                    </div>
+                    <div class="col-xs-2">
+                        With Images
+                    </div>
+                    <div class="col-xs-2">
+                        With Images
+                    </div>
+                </span>
+                <span slot="code">
+                    <peper-code>&lt;avatar text=&quot;Nizul Zaim&quot;&gt;&#13;&#10;&nbsp;&nbsp;&nbsp;&lt;img src=&quot;https://placeimg.com/48/48/people/1&quot; /&gt;&#13;&#10;&lt;/avatar&gt;</peper-code>
+                    <peper-code>&lt;avatar text=&quot;Nizul Zaim&quot;&gt;&lt;/avatar&gt;</peper-code>
+                    <peper-code>&lt;avatar text=&quot;Lili Madiha&quot;&gt;&lt;/avatar&gt;</peper-code>
+                </span>
+            </peper-doc>
+            <!-- <div style="display:table; margin: 0 auto;">
                 <avatar text="Nizul Zaim" style="float:left; margin-left: 2px; margin-right: 2px;"><img src="https://placeimg.com/48/48/people/1" /></avatar>
                 <avatar text="nizul Zaim" style="float:left; margin-left: 2px; margin-right: 2px;"></avatar>
                 <avatar text="Lili Madiha" style="float:left; margin-left: 2px; margin-right: 2px;"></avatar>
-            </div>
+            </div> -->
         </transition-block>
     </div>
 </template>
