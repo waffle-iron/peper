@@ -1,6 +1,6 @@
 <template>
     <div class="optiscroll" style="height:100%;">
-        <div class="optiscroll-vue-wrapper">
+        <div class="optiscroll-vue-wrapper" style="overflow-x: hidden;">
             <slot></slot>
         </div>
     </div>
