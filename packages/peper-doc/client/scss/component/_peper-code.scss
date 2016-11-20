@@ -70,50 +70,64 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
 }
 
 .peper-code {
+<<<<<<< Updated upstream
+=======
+    background: #333 !important;
+    @include transition(all 0.2s $sharpCurve);
+    &:hover {
+        background: #444 !important;
+        .copy-button {
+            background: #666;
+        }
+    }
+>>>>>>> Stashed changes
 
     .copy-button {
         position: absolute;
         top: 0;
+<<<<<<< Updated upstream
         right: 0;
         background: #666;
+=======
+        right:0;
+        background: #555;
+>>>>>>> Stashed changes
         z-index: 5;
-        padding-left: 4px;
-        padding-right: 4px;
+        padding-left: 12px;
+        padding-right: 12px;
         font-size: 12px;
         height: 32px;
         line-height: 32px;
+<<<<<<< Updated upstream
         cursor: pointer;
 
         &:hover {
             background: #999 !important;
-        }
-
-    }
-}
-
-pre {
-    padding: 0;
-    margin: 0;
-    code {
-        background: #333 !important;
-        -webkit-touch-callout: initial;
-        -webkit-user-select: initial;
-        -khtml-user-select: initial;
-        -moz-user-select: initial;
-        -ms-user-select: initial;
-        user-select: initial;
-
-        * {
-            -webkit-touch-callout: initial;
-            -webkit-user-select: initial;
-            -khtml-user-select: initial;
-            -moz-user-select: initial;
-            -ms-user-select: initial;
-            user-select: initial;
-        }
-
+=======
+        color: $color-grey-100;
+        cursor: pointer;
+        @include transition(all 0.2s $sharpCurve);
         &:hover {
-            background: #444 !important;
+            background: #4e4e4e;
+            color: $color-grey-200;
+>>>>>>> Stashed changes
+        }
+    }
+
+    pre {
+        padding: 0;
+        margin: 0;
+        background: transparent !important;
+        code {
+            background: transparent !important;
+            &, * {
+                -webkit-touch-callout: initial;
+                -webkit-user-select: initial;
+                -khtml-user-select: initial;
+                -moz-user-select: initial;
+                -ms-user-select: initial;
+                user-select: initial;
+            }
         }
     }
 }
