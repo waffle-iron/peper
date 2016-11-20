@@ -70,8 +70,6 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
 }
 
 .peper-code {
-<<<<<<< Updated upstream
-=======
     background: #333 !important;
     @include transition(all 0.2s $sharpCurve);
     &:hover {
@@ -80,37 +78,24 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
             background: #666;
         }
     }
->>>>>>> Stashed changes
 
     .copy-button {
         position: absolute;
         top: 0;
-<<<<<<< Updated upstream
-        right: 0;
-        background: #666;
-=======
         right:0;
         background: #555;
->>>>>>> Stashed changes
         z-index: 5;
         padding-left: 12px;
         padding-right: 12px;
         font-size: 12px;
         height: 32px;
         line-height: 32px;
-<<<<<<< Updated upstream
-        cursor: pointer;
-
-        &:hover {
-            background: #999 !important;
-=======
         color: $color-grey-100;
         cursor: pointer;
         @include transition(all 0.2s $sharpCurve);
         &:hover {
             background: #4e4e4e;
             color: $color-grey-200;
->>>>>>> Stashed changes
         }
     }
 
