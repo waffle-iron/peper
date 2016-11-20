@@ -1,0 +1,118 @@
+/*
+Monokai style - ported by Luigi Maselli - http://grigio.org
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #272822; color: #ddd;
+}
+
+.hljs-tag,
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-strong,
+.hljs-name {
+  color: #f92672;
+}
+
+.hljs-code {
+  color: #66d9ef;
+}
+
+.hljs-class .hljs-title {
+  color: white;
+}
+
+.hljs-attribute,
+.hljs-symbol,
+.hljs-regexp,
+.hljs-link {
+  color: #bf79db;
+}
+
+.hljs-string,
+.hljs-bullet,
+.hljs-subst,
+.hljs-title,
+.hljs-section,
+.hljs-emphasis,
+.hljs-type,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+  color: #a6e22e;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion,
+.hljs-meta {
+  color: #75715e;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-doctag,
+.hljs-title,
+.hljs-section,
+.hljs-type,
+.hljs-selector-id {
+  font-weight: bold;
+}
+
+.peper-code {
+    background: #333 !important;
+    @include transition(all 0.2s $sharpCurve);
+    &:hover {
+        background: #444 !important;
+        .copy-button {
+            background: #666;
+        }
+    }
+
+    .copy-button {
+        position: absolute;
+        top: 0;
+        right:0;
+        background: #555;
+        z-index: 5;
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 12px;
+        height: 32px;
+        line-height: 32px;
+        color: $color-grey-100;
+        cursor: pointer;
+        @include transition(all 0.2s $sharpCurve);
+        &:hover {
+            background: #4e4e4e;
+            color: $color-grey-200;
+        }
+    }
+
+    pre {
+        padding: 0;
+        margin: 0;
+        background: transparent !important;
+        code {
+            background: transparent !important;
+            &, * {
+                -webkit-touch-callout: initial;
+                -webkit-user-select: initial;
+                -khtml-user-select: initial;
+                -moz-user-select: initial;
+                -ms-user-select: initial;
+                user-select: initial;
+            }
+        }
+    }
+}

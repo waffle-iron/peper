@@ -52,6 +52,9 @@ export default {
                 }
                 $navList.on("click", function(e) {
                     e.preventDefault();
+                });
+                $navList.on("mouseup", function(e) {
+                    e.preventDefault();
                     $chevron.velocity("reverse");
                     $navSublist.velocity("reverse");
                 });

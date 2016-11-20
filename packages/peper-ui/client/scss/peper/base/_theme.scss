@@ -30,34 +30,51 @@ rgb(133, 197, 228)
 rgb(36, 124, 167)
 rgb(20, 68, 92);
 
+$palette-blue:
+rgb(255, 255, 255)
+rgb(208, 220, 246)
+rgb(161, 185, 236)
+rgb(102, 141, 224)
+rgb(76, 122, 219)
+rgb(51, 103, 214)
+rgb(39, 89, 195)
+rgb(34, 77, 170)
+rgb(29, 66, 144)
+rgb(24, 54, 119)
+rgb(255, 255, 255)
+rgb(208, 220, 246)
+rgb(76, 122, 219)
+rgb(34, 77, 170)
+;
 
-$palette-dark-blue-50: nth($palette-dark-blue, 1);
-$palette-dark-blue-100: nth($palette-dark-blue, 2);
-$palette-dark-blue-200: nth($palette-dark-blue, 3);
-$palette-dark-blue-300: nth($palette-dark-blue, 4);
-$palette-dark-blue-400: nth($palette-dark-blue, 5);
-$palette-dark-blue-500: nth($palette-dark-blue, 6);
-$palette-dark-blue-600: nth($palette-dark-blue, 7);
-$palette-dark-blue-700: nth($palette-dark-blue, 8);
-$palette-dark-blue-800: nth($palette-dark-blue, 9);
-$palette-dark-blue-900: nth($palette-dark-blue, 10);
-$palette-dark-blue-A100: nth($palette-dark-blue, 11);
-$palette-dark-blue-A200: nth($palette-dark-blue, 12);
-$palette-dark-blue-A400: nth($palette-dark-blue, 13);
-$palette-dark-blue-A700: nth($palette-dark-blue, 14);
 
-$theme-color: $palette-dark-blue-500;
-$theme-primary : $palette-dark-blue-500;
-$theme-primary-50 : $palette-dark-blue-50;
-$theme-primary-100 : $palette-dark-blue-100;
-$theme-primary-200 : $palette-dark-blue-200;
-$theme-primary-300 : $palette-dark-blue-300;
-$theme-primary-400 : $palette-dark-blue-400;
-$theme-primary-500 : $palette-dark-blue-500;
-$theme-primary-600 : $palette-dark-blue-600;
-$theme-primary-700 : $palette-dark-blue-700;
-$theme-primary-800 : $palette-dark-blue-800;
-$theme-primary-900 : $palette-dark-blue-900;
+$palette-blue-50: nth($palette-blue, 1);
+$palette-blue-100: nth($palette-blue, 2);
+$palette-blue-200: nth($palette-blue, 3);
+$palette-blue-300: nth($palette-blue, 4);
+$palette-blue-400: nth($palette-blue, 5);
+$palette-blue-500: nth($palette-blue, 6);
+$palette-blue-600: nth($palette-blue, 7);
+$palette-blue-700: nth($palette-blue, 8);
+$palette-blue-800: nth($palette-blue, 9);
+$palette-blue-900: nth($palette-blue, 10);
+$palette-blue-A100: nth($palette-blue, 11);
+$palette-blue-A200: nth($palette-blue, 12);
+$palette-blue-A400: nth($palette-blue, 13);
+$palette-blue-A700: nth($palette-blue, 14);
+
+$theme-color: $palette-blue-500;
+$theme-primary : $palette-blue-500;
+$theme-primary-50 : $palette-blue-50;
+$theme-primary-100 : $palette-blue-100;
+$theme-primary-200 : $palette-blue-200;
+$theme-primary-300 : $palette-blue-300;
+$theme-primary-400 : $palette-blue-400;
+$theme-primary-500 : $palette-blue-500;
+$theme-primary-600 : $palette-blue-600;
+$theme-primary-700 : $palette-blue-700;
+$theme-primary-800 : $palette-blue-800;
+$theme-primary-900 : $palette-blue-900;
 $theme-primary-light : $theme-primary-100;
 $theme-primary-dark : $theme-primary-700;
 $theme-text-color: $color-white;

@@ -1,0 +1,14 @@
+.peper-doc {
+    width: 100%;
+    background: transparent;
+
+    .render {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .label {
+        background: $color-white;
+        height: 48px;
+        width: 100%;
+    }
+}
