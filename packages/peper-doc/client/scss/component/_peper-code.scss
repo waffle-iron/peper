@@ -105,6 +105,7 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
         background: transparent !important;
         code {
             background: transparent !important;
+            white-space:pre-wrap; word-wrap:break-word;
             &, * {
                 -webkit-touch-callout: initial;
                 -webkit-user-select: initial;

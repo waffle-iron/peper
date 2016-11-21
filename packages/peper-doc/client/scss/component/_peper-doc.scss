@@ -5,6 +5,13 @@
     .render {
         padding-top: 32px;
         padding-bottom: 32px;
+
+        .render-block {
+            & > * {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
     }
     .label {
         background: $color-white;

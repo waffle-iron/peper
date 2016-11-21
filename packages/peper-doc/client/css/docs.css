@@ -394,6 +394,9 @@ a {
   .peper-doc .render {
     padding-top: 32px;
     padding-bottom: 32px; }
+    .peper-doc .render .render-block > * {
+      margin-left: auto;
+      margin-right: auto; }
   .peper-doc .label {
     background: #ffffff;
     height: 48px;
@@ -499,7 +502,9 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
     margin: 0;
     background: transparent !important; }
     .peper-code pre code {
-      background: transparent !important; }
+      background: transparent !important;
+      white-space: pre-wrap;
+      word-wrap: break-word; }
       .peper-code pre code, .peper-code pre code * {
         -webkit-touch-callout: initial;
         -webkit-user-select: initial;
