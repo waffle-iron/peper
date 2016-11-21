@@ -26,6 +26,25 @@ export default {
     },
     mounted() {
         let self = this;
+        self.$nextTick(function() {
+            $el = $(self.$el);
+
+            $el.hover(function() {
+                $(this).addClass("hover");
+            }, function() {
+                $(this).removeClass("hover");
+            });
+
+            $el.on("touchstart click", function() {
+                var $this =$(this);
+                $this.trigger("mouseleave");
+                $this.blur();
+                $this.addClass("hover");
+                $this.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(e) {
+                    $this.removeClass("hover");
+                });
+            })
+        })
     }
 }
 </script>
