@@ -1,5 +1,5 @@
 <template>
-    <router-link :to="link" class="flat-button" :type="type">
+    <router-link :to="link" :tag="tag" class="flat-button" :type="type">
         <slot></slot>
     </router-link>
 </template>
@@ -26,12 +26,6 @@ export default {
     },
     mounted() {
         let self = this;
-        self.$nextTick(function() {
-            $el = $(self.$el);
-            $el.on("click mouseup tap", function() {
-                $(this).blur();
-            })
-        })
     }
 }
 </script>
