@@ -56,9 +56,9 @@ export default {
         });
 
         var myHeight = clientHeight - siblingHeight;
-        $el.children("#loadingHere").css({
-            "min-height": myHeight
-        });
+        // $el.children("#loadingHere").css({
+        //     "min-height": myHeight
+        // });
     }
 }
 </script>
