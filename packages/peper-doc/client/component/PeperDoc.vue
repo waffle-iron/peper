@@ -1,7 +1,9 @@
 <template>
     <div class="peper-doc">
         <div class="render">
-            <slot name="render"></slot>
+            <div class="page-container">
+                <slot name="render"></slot>
+            </div>
         </div>
         <div class="label" style="line-height: 48px; text-align: center">
             <slot name="label"></slot>
