@@ -4,6 +4,7 @@
     @include border-radius(2px);
     overflow:hidden;
     margin-bottom: 12px;
+    @include transition(all 0.2s $sharpCurve);
     &-image {
         position: relative;
         overflow: hidden;

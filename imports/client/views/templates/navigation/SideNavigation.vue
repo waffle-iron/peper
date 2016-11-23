@@ -1,7 +1,7 @@
 <template>
     <side-navigation v-depth="2">
         <div slot="header">
-            <side-navigation-profile-1 text1="Nizul Zaim" text2="skynightz9@gmail.com"></side-navigation-profile>
+            <side-navigation-profile-1 text1="Nizul Zaim" text2="skynightz9@gmail.com"></side-navigation-profile-1>
         </div>
         <nav-list to="/" class="nav-item">
             <icon name="paper-cut-vertical"></icon> Peper UI
@@ -14,7 +14,7 @@
             <span slot="sublist">
                 <nav-list to="/components/avatar"><icon name="account-box"></icon> Avatar UI</nav-list>
                 <nav-list to="/components/button"><icon name="crop-landscape"></icon> Button UI</nav-list>
-                <nav-list to="/components/card"><icon name="cash"></icon> Card UI</nav-list>
+                <nav-list to="/components/card"><icon name="cards"></icon> Card UI</nav-list>
                 <nav-list to="/components/tabs"><icon name="cash"></icon> Tabs UI</nav-list>
             </span>
         </nav-list>

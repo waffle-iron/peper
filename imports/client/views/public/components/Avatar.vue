@@ -3,24 +3,24 @@
         <transition-block :show="show">
             <peper-doc>
                 <div slot="render" class="row center-xs">
-                    <div class="col-xs-2 render-block">
+                    <div class="col-sm-2 render-block">
                         <avatar v-ripple><img src="https://placeimg.com/48/48/people/1" /></avatar>
                     </div>
-                    <div class="col-xs-2 render-block">
+                    <div class="col-sm-2 render-block">
                         <avatar text="nizul Zaim"></avatar>
                     </div>
-                    <div class="col-xs-2 render-block">
+                    <div class="col-sm-2 render-block">
                         <avatar text="Lili Madiha"></avatar>
                     </div>
                 </div>
-                <span slot="label" class="row center-xs">
-                    <div class="col-xs-2">
+                <span slot="label" class="row center-xs hidden-xs">
+                    <div class="col-sm-2">
                         With Images
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-sm-2">
                         With Images
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-sm-2">
                         With Images
                     </div>
                 </span>

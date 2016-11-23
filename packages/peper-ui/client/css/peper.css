@@ -6538,6 +6538,9 @@ a {
 .font-center {
   text-align: center; }
 
+.no-margin {
+  margin: 0; }
+
 .slide-fade-enter-active {
   transition: all .5s ease; }
 

@@ -5,7 +5,7 @@ import SideNavigation from '/imports/client/views/templates/navigation/SideNavig
 import Index from '/imports/client/views/public/Index.vue';
 import ComponentsAvatar from '/imports/client/views/public/components/Avatar.vue';
 import ComponentsButton from '/imports/client/views/public/components/Button.vue';
-
+import ComponentsCard from '/imports/client/views/public/components/Card.vue';
 // import GoldIndex from '/imports/client/views/public/gold/Index.vue';
 // import GoldDefaultToolbar from '/imports/client/views/templates/toolbar/GoldDefaultToolbar.vue';
 
@@ -48,6 +48,16 @@ Router.configure(router => {
             meta: { fixToolbar: true },
             components: {
                 default: ComponentsAvatar,
+                toolbar: ComponentToolbar,
+                navigation: SideNavigation,
+            }
+        },
+        {
+            path: "/components/card",
+            name: "ComponentsCard",
+            meta: { fixToolbar: true },
+            components: {
+                default: ComponentsCard,
                 toolbar: ComponentToolbar,
                 navigation: SideNavigation,
             }
