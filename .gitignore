@@ -2,3 +2,4 @@ node_modules/
 .sass-cache/
 .deploy/mup.js
 .deploy/rsa
+.vscode/
