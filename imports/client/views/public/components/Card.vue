@@ -3,7 +3,7 @@
         <transition-block  :show="show">
             <peper-doc>
                 <div slot="render" class="row center-xs">
-                    <div class="col-lg-fluid-6 col-xlg-fluid-5">
+                    <div class="col-lg-fluid-6 col-xlg-fluid-6">
                         <cards :shadowHover="2">
                             <cards-image img="/packages/skynightz93_peper-ui/client/img/gold.jpg"></cards-image>
                             <cards-content>
@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <span slot="label" class="row center-xs">
-                    <div class="col-lg-fluid-6 col-xlg-fluid-5">
+                    <div class="col-lg-fluid-6 col-xlg-fluid-6">
                         With Images
                     </div>
                 </span>
@@ -34,7 +34,7 @@
             </peper-doc>
             <peper-doc>
                 <div slot="render" class="row center-xs">
-                    <div class="col-lg-fluid-6 col-xlg-fluid-5">
+                    <div class="col-lg-fluid-6 col-xlg-fluid-6">
                         <cards>
                             <cards-image img="/packages/skynightz93_peper-ui/client/img/gold.jpg"></cards-image>
                             <cards-content>
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <span slot="label" class="row center-xs">
-                    <div class="col-lg-fluid-6 col-xlg-fluid-5">
+                    <div class="col-lg-fluid-6 col-xlg-fluid-6">
                         With Images
                     </div>
                 </span>
@@ -61,7 +61,7 @@
             </peper-doc>
             <peper-doc>
                 <div slot="render" class="row center-xs">
-                    <div class="col-lg-fluid-6 col-xlg-fluid-5">
+                    <div class="col-lg-fluid-6 col-xlg-fluid-6">
                         <cards>
                             <cards-content>
                                 <div style="padding: 16px 0;">
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <span slot="label" class="row center-xs">
-                    <div class="col-lg-fluid-6 col-xlg-fluid-5">
+                    <div class="col-lg-fluid-6 col-xlg-fluid-6">
                         With Images
                     </div>
                 </span>
@@ -88,7 +88,7 @@
             </peper-doc>
             <peper-doc>
                 <div slot="render" class="row center-xs">
-                    <div class="col-lg-fluid-6 col-xlg-fluid-5">
+                    <div class="col-lg-fluid-6 col-xlg-fluid-6">
                         <cards>
                             <cards-content>
                                 <div style="padding: 16px 0;">
@@ -104,7 +104,7 @@
                     </div>
                 </div>
                 <span slot="label" class="row center-xs">
-                    <div class="col-lg-fluid-6 col-xlg-fluid-5">
+                    <div class="col-lg-fluid-6 col-xlg-fluid-6">
                         With Images
                     </div>
                 </span>
