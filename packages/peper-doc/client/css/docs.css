@@ -3,10 +3,12 @@
   background: transparent; }
   .peper-doc .render {
     padding-top: 8px;
-    padding-bottom: 32px; }
+    padding-bottom: 8px; }
     .peper-doc .render .render-block > * {
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      margin-top: 2px;
+      margin-bottom: 2px; }
   .peper-doc .label {
     background: #ffffff;
     height: 48px;

@@ -6697,7 +6697,7 @@ button.raised-button, a.raised-button {
     button.raised-button.primary.hover, a.raised-button.primary.hover {
       background: #0273f7; }
   button.raised-button.accent, a.raised-button.accent {
-    color: #212121;
+    color: #ffffff;
     background: #e91e63; }
     button.raised-button.accent.hover, a.raised-button.accent.hover {
       background: #d81b60; }

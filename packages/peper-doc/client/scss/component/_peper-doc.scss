@@ -4,12 +4,14 @@
 
     .render {
         padding-top: 8px;
-        padding-bottom: 32px;
+        padding-bottom: 8px;
 
         .render-block {
             & > * {
                 margin-left: auto;
                 margin-right: auto;
+                margin-top: 2px;
+                margin-bottom: 2px;
             }
         }
     }
