@@ -6837,6 +6837,10 @@ button.color-button, a.color-button {
   width: 48px;
   height: 48px;
   line-height: 48px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 28px;
+  font-weight: 300;
   text-align: center;
   -webkit-border-radius: 100%;
   border-radius: 100%;
@@ -6849,6 +6853,10 @@ button.color-button, a.color-button {
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0); }
+  @media (min-width: 768px) {
+    .peper-avatar {
+      font-size: 24px;
+      line-height: 32px; } }
   .peper-avatar img {
     position: absolute;
     top: 0;
@@ -6876,18 +6884,23 @@ button.color-button, a.color-button {
     overflow: hidden;
     padding-bottom: 56.25%;
     display: block;
-    text-decoration: none; }
-    .peper-cards-image > img {
+    text-decoration: none;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0); }
+    .peper-cards-image img {
       position: absolute;
       top: 50%;
       left: 50%;
       width: 100%;
       max-width: 100%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate3D(-50%, -50%, 0);
+      -moz-transform: translate3D(-50%, -50%, 0);
+      -ms-transform: translate3D(-50%, -50%, 0);
+      -o-transform: translate3D(-50%, -50%, 0);
+      transform: translate3D(-50%, -50%, 0);
       z-index: 0; }
     .peper-cards-image-overlay {
       position: absolute;
@@ -6898,17 +6911,46 @@ button.color-button, a.color-button {
       left: 0;
       background: #000000;
       z-index: 1; }
-    .peper-cards-image-title {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      padding: 8px;
-      width: 100%;
-      z-index: 2; }
     .peper-cards-image .ripple-circle {
       z-index: 1; }
+    .peper-cards-image.follow-height img {
+      height: 100%;
+      width: auto;
+      max-width: initial; }
+    .peper-cards-image .peper-cards-content {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: auto;
+      top: auto; }
+      .peper-cards-image .peper-cards-content .content-overlay {
+        opacity: 0.6;
+        background: #000000; }
+    .peper-cards-image.ratio-1-1 {
+      padding-bottom: 100%; }
+  .peper-cards-content:before, .peper-cards-content:after {
+    content: " ";
+    display: table; }
+  .peper-cards-content:after {
+    clear: both; }
   .peper-cards-content.has-padding {
     padding: 8px 12px; }
+  .peper-cards-content.profile .peper-avatar {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    margin-right: 12px; }
+  .peper-cards-content.profile .profile-title {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 24px;
+    font-weight: 500;
+    line-height: 20px; }
+  .peper-cards-content.profile .profile-subhead {
+    font-weight: 400;
+    line-height: 20px;
+    color: #616161; }
   .peper-cards-action {
     position: relative;
     width: 100%;

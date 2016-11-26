@@ -4,6 +4,7 @@
             <load-img :img="img" :img-small="imgSmall"></load-img>
         </div>
         <div class="peper-cards-image-overlay"></div>
+        <slot></slot>
     </div>
 </template>
 

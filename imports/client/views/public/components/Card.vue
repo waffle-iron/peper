@@ -9,6 +9,11 @@
                 <div slot="render" class="row center-xs">
                     <div class="col-lg-fluid-6 col-xlg-fluid-6">
                         <cards :shadowHover="2">
+                            <cards-content class="profile">
+                                <avatar v-ripple text="Nizul Zaim"></avatar>
+                                <div class="profile-title">Title</div>
+                                <div class="profile-subhead">Subhead</div>
+                            </cards-content>
                             <cards-image img="/packages/skynightz93_peper-ui/client/img/gold.jpg"></cards-image>
                             <cards-content>
                                 <div style="padding: 16px 0;">
@@ -24,6 +29,30 @@
                                 <flat-button type="button" v-ripple>Link 1</flat-button>
                                 <flat-button type="button" v-ripple>Link 2</flat-button>
                             </cards-action>
+                        </cards>
+                    </div>
+                </div>
+                <span slot="label" class="row center-xs">
+                    <div class="col-lg-fluid-6 col-xlg-fluid-6">
+                        With Images
+                    </div>
+                </span>
+                <span slot="code">
+                    <!-- <peper-code>{{item}}</peper-code> -->
+                </span>
+            </peper-doc>
+            <peper-doc>
+                <div slot="render" class="row center-xs">
+                    <div class="col-lg-fluid-6 col-xlg-fluid-6">
+                        <cards :shadowHover="2">
+                            <cards-image class="follow-height ratio-1-1" img="/packages/skynightz93_peper-ui/client/img/gold.jpg">
+                                <cards-content>
+                                    <div style="padding: 16px 0;">
+                                        <div class="font-headline color-white no-margin">Title goes here</div>
+                                        <div class="font-subhead color-grey-50">Subtitle here</div>
+                                    </div>
+                                </cards-content>
+                            </cards-image>
                         </cards>
                     </div>
                 </div>
