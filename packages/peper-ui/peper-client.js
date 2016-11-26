@@ -1,9 +1,11 @@
-import './client/directives/v-ripple';
-import './client/directives/v-depth';
-import './client/directives/v-sidenav';
 import './plugin/optiscroll/optiscroll.min';
 import './plugin/resize/jquery.resize';
 import './plugin/particles/jquery.particleground.min';
+import './plugin/clamp/clamp';
+import './client/directives/v-ripple';
+import './client/directives/v-depth';
+import './client/directives/v-sidenav';
+import './client/directives/v-clamp';
 
 $.fn.isOnScreen = function(){
     var win = $(window);
