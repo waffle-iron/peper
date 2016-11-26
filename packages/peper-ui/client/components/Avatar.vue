@@ -1,7 +1,6 @@
 <template>
     <div class="peper-avatar">
-        <div class="font-headline font-light no-margin" style="line-height: 48px;">{{firstChar}}
-        </div>
+        <span class="no-margin">{{firstChar}}</span>
         <slot></slot>
     </div>
 </template>
