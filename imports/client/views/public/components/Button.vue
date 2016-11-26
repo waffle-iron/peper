@@ -1,6 +1,20 @@
 <template>
     <div>
         <transition-block :show="show">
+            <page-container>
+                <div class="font-title">Button types</div>
+                <p>There are three standard types of buttons:</p>
+                <ul>
+                    <li>Raised button: A typically rectangular material button that lifts and displays ink reactions on press.</li>
+                    <li>Flat button: A button made of ink that displays ink reactions on press but does not lift.</li>
+                    <li>Floating action button: A circular material button that lifts and displays an ink reaction on press.</li>
+                </ul>
+            </page-container>
+            <page-container>
+                <div class="font-title">Raised buttons</div>
+                <p>Raised buttons add dimension to mostly flat layouts. They emphasize functions on busy or wide spaces. Raised buttons behave like a piece of material resting on another sheet – they lift and fill with color on press. Raised buttons have a default elevation of 2dp. On desktop, raised buttons can gain this elevation on hover.</p>
+            </page-container>
+
             <peper-doc>
                 <div slot="render" class="row center-xs">
                     <div class="col-sm-3 render-block">
@@ -50,6 +64,15 @@
                     <peper-code>{{item}}</peper-code>
                 </span>
             </peper-doc>
+            <page-container>
+                <div class="font-title">Flat Button</div>
+                    <p>Flat buttons are printed on material. They do not lift, but fill with color on press. Use flat buttons in the following locations:</p>
+                    <ul>
+                        <li>On toolbars</li>
+                        <li>In dialogs, to unify the button action with the dialog content</li>
+                        <li>Inline, with padding, so the user can easily find them</li>
+                    </ul>
+            </page-container>
             <peper-doc>
                 <div slot="render" class="row center-xs">
                     <div class="col-sm-3 render-block">
@@ -99,7 +122,10 @@
                     <peper-code>{{item}}</peper-code>
                 </span>
             </peper-doc>
-
+            <page-container>
+                <div class="font-title">Color Button</div>
+                <p>Color Button are one part of flat button but with background. Different from raised buttons where it don't have depth.</p>
+            </page-container>
             <peper-doc>
                 <div slot="render" class="row center-xs">
                     <div class="col-sm-3 render-block">

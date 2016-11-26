@@ -1,9 +1,13 @@
+body {
+  background: #ffffff; }
+
 .peper-doc {
   width: 100%;
   background: transparent; }
   .peper-doc .render {
     padding-top: 8px;
-    padding-bottom: 8px; }
+    padding-bottom: 8px;
+    background: #eeeeee; }
     .peper-doc .render .render-block > * {
       margin-left: auto;
       margin-right: auto;
