@@ -11,7 +11,7 @@
                         <cards :shadowHover="2">
                             <cards-content class="profile">
                                 <avatar v-ripple text="Nizul Zaim"></avatar>
-                                <div class="profile-title">Title</div>
+                                <div class="profile-title">Title</div>                                
                                 <div class="profile-subhead">Subhead</div>
                             </cards-content>
                             <cards-image img="/packages/skynightz93_peper-ui/client/img/gold.jpg"></cards-image>
@@ -25,6 +25,7 @@
                                     </div>
                                 </div>
                             </cards-content>
+                            <divider></divider>
                             <cards-action>
                                 <flat-button type="button" v-ripple>Link 1</flat-button>
                                 <flat-button type="button" v-ripple>Link 2</flat-button>
@@ -80,6 +81,7 @@
                                     </div>
                                 </div>
                             </cards-content>
+                            <divider></divider>
                             <cards-action>
                                 <flat-button type="button" v-ripple>Link 1</flat-button>
                                 <flat-button type="button" v-ripple>Link 2</flat-button>
@@ -107,6 +109,7 @@
                                     <div class="font-subhead no-margin color-grey-700">Subtitle here</div>
                                 </div>
                             </cards-content>
+                            <divider></divider>
                             <cards-action>
                                 <flat-button type="button" v-ripple>Link 1</flat-button>
                                 <flat-button type="button" v-ripple>Link 2</flat-button>
@@ -134,6 +137,7 @@
                                 </div>
                             </cards-content>
                             <cards-image img="/packages/skynightz93_peper-ui/client/img/gold.jpg"></cards-image>
+                            <divider></divider>                            
                             <cards-action>
                                 <flat-button type="button" v-ripple>Link 1</flat-button>
                                 <flat-button type="button" v-ripple>Link 2</flat-button>
@@ -160,6 +164,7 @@
                                     <div class="font-subhead no-margin color-grey-700">Subtitle here</div>
                                 </div>
                             </cards-content>
+                            <divider></divider>                            
                             <cards-action>
                                 <flat-button type="button" v-ripple>Link 1</flat-button>
                                 <flat-button type="button" v-ripple>Link 2</flat-button>
