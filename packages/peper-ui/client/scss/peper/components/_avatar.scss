@@ -1,8 +1,7 @@
 .peper-avatar {
     width: 48px;
     height: 48px;
-    line-height: 48px;
-    @include typography-headline;
+    font-size: 24px;
     font-weight: 300;
     text-align: center;
     @include border-radius(100%);
@@ -10,6 +9,7 @@
     color: white;
     overflow: hidden;
     @include transform(translateZ(0));
+    line-height: 48px;
     img {
         position: absolute;
         top: 0;
