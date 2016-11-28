@@ -6,6 +6,7 @@ import Index from '/imports/client/views/public/Index.vue';
 import ComponentsAvatar from '/imports/client/views/public/components/Avatar.vue';
 import ComponentsButton from '/imports/client/views/public/components/Button.vue';
 import ComponentsCard from '/imports/client/views/public/components/Card.vue';
+import ComponentsSelectionControl from '/imports/client/views/public/components/SelectionControl.vue';
 // import GoldIndex from '/imports/client/views/public/gold/Index.vue';
 // import GoldDefaultToolbar from '/imports/client/views/templates/toolbar/GoldDefaultToolbar.vue';
 
@@ -58,6 +59,16 @@ Router.configure(router => {
             meta: { fixToolbar: true },
             components: {
                 default: ComponentsCard,
+                toolbar: ComponentToolbar,
+                navigation: SideNavigation,
+            }
+        },
+        {
+            path: "/components/selection-control",
+            name: "ComponentsSelectionControl",
+            meta: { fixToolbar: true },
+            components: {
+                default: ComponentsSelectionControl,
                 toolbar: ComponentToolbar,
                 navigation: SideNavigation,
             }

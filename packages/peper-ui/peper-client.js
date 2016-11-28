@@ -58,6 +58,7 @@ import Icon from './client/components/Icon.vue';
 import IconButton from './client/components/IconButton.vue';
 import FlexContainer from './client/components/FlexContainer.vue';
 import ScrollBar from './client/components/ScrollBar.vue';
+import Switches from './client/components/Switches.vue';
 import FullHeight from './client/components/FullHeight.vue';
 import PageContainer from './client/components/PageContainer.vue';
 import RaisedButton from './client/components/RaisedButton.vue';
@@ -94,5 +95,7 @@ Vue.component("page-container", PageContainer);
 Vue.component("raised-button", RaisedButton);
 Vue.component("side-navigation", SideNavigation);
 Vue.component("side-navigation-profile-1", SideNavigationProfile1);
+Vue.component("switches", Switches);
+
 Vue.component("transition-block", TransitionBlock);
 Vue.component("nav-list", NavList);
