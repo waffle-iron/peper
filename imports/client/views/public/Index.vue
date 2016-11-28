@@ -33,7 +33,16 @@
             </div>
 
             <!-- <div style="height: 40px;"></div> -->
-            <div style="height: 1900px;"></div>
+            <div style="height: 1900px;">
+                <switches v-model="test"></switches>
+                <switches class="accent" v-model="test"></switches>
+                <switches class="green" v-model="test"></switches>
+                <switches class="yellow" v-model="test"></switches>
+                <switches class="red" v-model="test"></switches>
+                <switches class="blue" v-model="test"></switches>
+                <switches class="blue" v-model="test" :disabled="true"></switches>
+                {{test}}
+            </div>
         </div>
     </transition-block>
 </template>
@@ -43,6 +52,7 @@
         data() {
             return {
                 show: false,
+                test: true,
             }
         },
         mounted() {

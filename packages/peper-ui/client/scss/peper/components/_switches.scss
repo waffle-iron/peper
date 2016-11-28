@@ -58,4 +58,90 @@
             background-color: rgba($theme-primary, 0.2);
         }
     }
+
+    &.accent {
+        input[type="checkbox"] {
+            &:checked ~ .peper-switches-track {
+                background-color: rgba($theme-accent,0.5);
+            }
+            &:checked ~ .peper-switches-thumb {
+                background-color: $theme-accent;
+            }
+
+            &:checked ~ .peper-switches-ripple {
+                background-color: rgba($theme-accent, 0.2);
+            }
+        }
+    }
+
+    &.green {
+        input[type="checkbox"] {
+            &:checked ~ .peper-switches-track {
+                background-color: rgba($color-green,0.5);
+            }
+            &:checked ~ .peper-switches-thumb {
+                background-color: $color-green;
+            }
+
+            &:checked ~ .peper-switches-ripple {
+                background-color: rgba($color-green, 0.2);
+            }
+        }
+    }
+
+    &.yellow {
+        input[type="checkbox"] {
+            &:checked ~ .peper-switches-track {
+                background-color: rgba($color-amber,0.5);
+            }
+            &:checked ~ .peper-switches-thumb {
+                background-color: $color-amber;
+            }
+
+            &:checked ~ .peper-switches-ripple {
+                background-color: rgba($color-amber, 0.2);
+            }
+        }
+    }
+
+    &.red {
+        input[type="checkbox"] {
+            &:checked ~ .peper-switches-track {
+                background-color: rgba($color-red,0.5);
+            }
+            &:checked ~ .peper-switches-thumb {
+                background-color: $color-red;
+            }
+
+            &:checked ~ .peper-switches-ripple {
+                background-color: rgba($color-red, 0.2);
+            }
+        }
+    }
+
+    &.blue {
+        input[type="checkbox"] {
+            &:checked ~ .peper-switches-track {
+                background-color: rgba($color-blue,0.5);
+            }
+            &:checked ~ .peper-switches-thumb {
+                background-color: $color-blue;
+            }
+
+            &:checked ~ .peper-switches-ripple {
+                background-color: rgba($color-blue, 0.2);
+            }
+        }
+    }
+
+    input[type="checkbox"]:disabled, input[type="checkbox"]:checked:disabled {
+        pointer-events: none;
+        & ~ .peper-switches-track {
+            background-color: rgba($color-black, 0.12);
+        }
+
+        & ~ .peper-switches-thumb {
+            background-color: rgba($color-grey-400, 1);
+        }
+    }
 }

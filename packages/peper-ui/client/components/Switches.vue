@@ -1,6 +1,6 @@
 <template>
     <div class="peper-switches" @click="elOnClick()">
-        <input ref="checkbox" :checked="value" @click="thumbOnClick" @change="$emit('input', $event.target.checked)" type="checkbox" >
+        <input ref="checkbox" :checked="value" @click="thumbOnClick" @change="$emit('input', $event.target.checked)" type="checkbox" :disabled="disabled" :name="name" >
         <div class="peper-switches-track"></div>
         <div ref="ripple" class="peper-switches-ripple"></div>
         <div class="peper-switches-thumb"></div>
@@ -9,7 +9,17 @@
 
 <script>
     export default {
-        props: ['value'],
+        props: {
+            value: {
+                
+            },
+            disabled: {
+                default: false,
+            },
+            name: {
+                default: "",
+            }
+        },
         methods: {
             elOnClick() {
                 $(this.$refs.checkbox).trigger("click")

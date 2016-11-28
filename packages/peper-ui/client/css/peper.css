@@ -7423,6 +7423,42 @@ button.color-button, a.color-button {
       -o-transform: translateX(14px) translateZ(0);
       transform: translateX(14px) translateZ(0);
       background-color: rgba(27, 131, 253, 0.2); }
+  .peper-switches.accent input[type="checkbox"]:checked ~ .peper-switches-track {
+    background-color: rgba(233, 30, 99, 0.5); }
+  .peper-switches.accent input[type="checkbox"]:checked ~ .peper-switches-thumb {
+    background-color: #e91e63; }
+  .peper-switches.accent input[type="checkbox"]:checked ~ .peper-switches-ripple {
+    background-color: rgba(233, 30, 99, 0.2); }
+  .peper-switches.green input[type="checkbox"]:checked ~ .peper-switches-track {
+    background-color: rgba(76, 175, 80, 0.5); }
+  .peper-switches.green input[type="checkbox"]:checked ~ .peper-switches-thumb {
+    background-color: #4caf50; }
+  .peper-switches.green input[type="checkbox"]:checked ~ .peper-switches-ripple {
+    background-color: rgba(76, 175, 80, 0.2); }
+  .peper-switches.yellow input[type="checkbox"]:checked ~ .peper-switches-track {
+    background-color: rgba(255, 193, 7, 0.5); }
+  .peper-switches.yellow input[type="checkbox"]:checked ~ .peper-switches-thumb {
+    background-color: #ffc107; }
+  .peper-switches.yellow input[type="checkbox"]:checked ~ .peper-switches-ripple {
+    background-color: rgba(255, 193, 7, 0.2); }
+  .peper-switches.red input[type="checkbox"]:checked ~ .peper-switches-track {
+    background-color: rgba(244, 67, 54, 0.5); }
+  .peper-switches.red input[type="checkbox"]:checked ~ .peper-switches-thumb {
+    background-color: #f44336; }
+  .peper-switches.red input[type="checkbox"]:checked ~ .peper-switches-ripple {
+    background-color: rgba(244, 67, 54, 0.2); }
+  .peper-switches.blue input[type="checkbox"]:checked ~ .peper-switches-track {
+    background-color: rgba(33, 150, 243, 0.5); }
+  .peper-switches.blue input[type="checkbox"]:checked ~ .peper-switches-thumb {
+    background-color: #2196f3; }
+  .peper-switches.blue input[type="checkbox"]:checked ~ .peper-switches-ripple {
+    background-color: rgba(33, 150, 243, 0.2); }
+  .peper-switches input[type="checkbox"]:disabled, .peper-switches input[type="checkbox"]:checked:disabled {
+    pointer-events: none; }
+    .peper-switches input[type="checkbox"]:disabled ~ .peper-switches-track, .peper-switches input[type="checkbox"]:checked:disabled ~ .peper-switches-track {
+      background-color: rgba(0, 0, 0, 0.12); }
+    .peper-switches input[type="checkbox"]:disabled ~ .peper-switches-thumb, .peper-switches input[type="checkbox"]:checked:disabled ~ .peper-switches-thumb {
+      background-color: #bdbdbd; }
 
 .peper-menu {
   padding: 4px 0;
