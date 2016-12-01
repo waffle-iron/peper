@@ -3,3 +3,4 @@ node_modules/
 .deploy/mup.js
 .deploy/rsa
 .vscode/
+version.desktop

@@ -66,6 +66,7 @@ import SideNavigation from './client/components/SideNavigation.vue';
 import NavList from './client/components/NavList.vue';
 import SideNavigationProfile1 from './client/components/SideNavigationProfile1.vue';
 import TransitionBlock from './client/components/TransitionBlock.vue';
+import TextField from './client/components/TextField.vue';
 
 $.propHooks.checked = {
     set: function(elem, value, name) {
@@ -96,6 +97,7 @@ Vue.component("raised-button", RaisedButton);
 Vue.component("side-navigation", SideNavigation);
 Vue.component("side-navigation-profile-1", SideNavigationProfile1);
 Vue.component("switches", Switches);
+Vue.component("text-field", TextField);
 
 Vue.component("transition-block", TransitionBlock);
 Vue.component("nav-list", NavList);
