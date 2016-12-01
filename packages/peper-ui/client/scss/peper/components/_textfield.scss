@@ -1,0 +1,56 @@
+.peper-textfield {
+    padding-top: 28px;
+    padding-bottom: 8px;
+
+    &-line {
+        width: 100%;
+        border-bottom: 2px solid $theme-color;
+        position: absolute;
+        bottom: 9px;
+        left: 0;
+        @include transform(scaleX(0) translateZ(0));
+        @include transform-origin((0,50%));
+        @include transition(all 0.2s $decelerationCurve);
+    }
+
+    &-floating-placeholder {
+        position: absolute;
+        top: 34px;
+        left: 0;
+        font-size: 16px;
+        color: $color-grey-500;
+        @include transform-origin((0));
+        @include transition(all 0.2s $decelerationCurve);
+        @include transform(translateZ(0));
+    }
+
+    input {
+        width: 100%;
+        border: 0;
+        margin: 0;
+        padding: 8px 0;
+        background: transparent;
+        outline: none;
+        font-size: 16px;
+        border-bottom: 1px solid $color-grey-300;
+
+        &:focus {
+            & ~ .peper-textfield-line {
+                @include transform(scaleX(1) translateZ(0));
+            }
+
+            & ~ .peper-textfield-floating-placeholder {
+                color: $theme-color;
+            }
+        }
+
+        &.has-text, &:focus {
+            & ~ .peper-textfield-floating-placeholder {
+                @include transform(scale(0.75) translateY(-26px) translateZ(0));
+            }
+        }
+        
+    }
+
+    
+}

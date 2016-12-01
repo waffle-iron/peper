@@ -16,6 +16,7 @@
                 <nav-list to="/components/button"><icon name="crop-landscape"></icon> Button UI</nav-list>
                 <nav-list to="/components/card"><icon name="cards"></icon> Card UI</nav-list>
                 <nav-list to="/components/selection-control"><icon name="toggle-switch"></icon> Selection Control UI</nav-list>
+                <nav-list to="/components/text-field"><icon name="textbox"></icon> Textfield UI</nav-list>
                 <nav-list to="/components/tabs"><icon name="cash"></icon> Tabs UI</nav-list>
             </span>
         </nav-list>

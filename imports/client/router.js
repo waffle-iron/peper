@@ -7,6 +7,7 @@ import ComponentsAvatar from '/imports/client/views/public/components/Avatar.vue
 import ComponentsButton from '/imports/client/views/public/components/Button.vue';
 import ComponentsCard from '/imports/client/views/public/components/Card.vue';
 import ComponentsSelectionControl from '/imports/client/views/public/components/SelectionControl.vue';
+import ComponentsTextField from '/imports/client/views/public/components/TextField.vue';
 // import GoldIndex from '/imports/client/views/public/gold/Index.vue';
 // import GoldDefaultToolbar from '/imports/client/views/templates/toolbar/GoldDefaultToolbar.vue';
 
@@ -69,6 +70,16 @@ Router.configure(router => {
             meta: { fixToolbar: true },
             components: {
                 default: ComponentsSelectionControl,
+                toolbar: ComponentToolbar,
+                navigation: SideNavigation,
+            }
+        },
+        {
+            path: "/components/text-field",
+            name: "ComponentsTextField",
+            meta: { fixToolbar: true },
+            components: {
+                default: ComponentsTextField,
                 toolbar: ComponentToolbar,
                 navigation: SideNavigation,
             }
