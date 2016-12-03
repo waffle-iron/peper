@@ -73,8 +73,6 @@
                 this.msgObj.msg = "Hello World";
                 this.msgObj.buttonText = "Retry";
                 this.showMsg=true;
-                this.test = !this.test;
-                console.log("hello");
             },
             helloWorld() {
                 console.log("From Index.vue");
