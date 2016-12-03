@@ -42,7 +42,9 @@
                 <switches class="blue" v-model="test"></switches>
                 <switches class="blue" v-model="test" :disabled="true"></switches>
                 {{test}}
+                <flat-button type="button"  v-on:click="tryAppend">Nizul Zaim</flat-button>
             </div>
+            <snackbar :msg="msgObj.msg" :button-text="msgObj.buttonText" @button-click="helloWorld" v-model="showMsg"></snackbar>
         </div>
     </transition-block>
 </template>
@@ -53,6 +55,8 @@
             return {
                 show: false,
                 test: true,
+                showMsg: false,
+                msgObj: {msg: "", buttonText: "OK"},
             }
         },
         mounted() {
@@ -62,6 +66,17 @@
                     self.show = true;
                 });
             })
+            
+        },
+        methods: {
+            tryAppend() {
+                this.msgObj.msg = "Hello World";
+                this.msgObj.buttonText = "Retry";
+                this.showMsg=true;
+            },
+            helloWorld() {
+                console.log("From Index.vue");
+            }
         }
     }
 </script>

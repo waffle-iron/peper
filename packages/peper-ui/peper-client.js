@@ -7,11 +7,11 @@ import './client/directives/v-depth';
 import './client/directives/v-sidenav';
 import './client/directives/v-clamp';
 
-$.fn.isOnScreen = function(){
+$.fn.isOnScreen = function() {
     var win = $(window);
     var viewport = {
-        top : win.scrollTop(),
-        left : win.scrollLeft()
+        top: win.scrollTop(),
+        left: win.scrollLeft()
     };
     viewport.right = viewport.left + win.width();
     viewport.bottom = viewport.top + win.height();
@@ -22,11 +22,11 @@ $.fn.isOnScreen = function(){
     return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
 };
 
-$.fn.waitForImages = function (callback) {
+$.fn.waitForImages = function(callback) {
     var $img = $('img', $(this)),
         totalImg = $img.length;
 
-    var waitImgLoad = function () {
+    var waitImgLoad = function() {
         totalImg--;
         if (!totalImg) {
             callback();
@@ -41,7 +41,7 @@ $.fn.waitForImages = function (callback) {
     }
 };
 
-import {Vue} from 'meteor/akryum:vue';
+import { Vue } from 'meteor/akryum:vue';
 import Avatar from './client/components/Avatar.vue';
 import Cards from './client/components/Cards.vue';
 import CardsImage from './client/components/CardsImage.vue';
@@ -67,10 +67,11 @@ import NavList from './client/components/NavList.vue';
 import SideNavigationProfile1 from './client/components/SideNavigationProfile1.vue';
 import TransitionBlock from './client/components/TransitionBlock.vue';
 import TextField from './client/components/TextField.vue';
+import Snackbar from './client/components/Snackbar.vue';
 
 $.propHooks.checked = {
     set: function(elem, value, name) {
-        var ret = (elem[ name ] = value);
+        var ret = (elem[name] = value);
         $(elem).trigger("change");
         return ret;
     }
@@ -98,6 +99,17 @@ Vue.component("side-navigation", SideNavigation);
 Vue.component("side-navigation-profile-1", SideNavigationProfile1);
 Vue.component("switches", Switches);
 Vue.component("text-field", TextField);
-
 Vue.component("transition-block", TransitionBlock);
 Vue.component("nav-list", NavList);
+Vue.component("snackbar", Snackbar);
+
+
+// console.log(Snackbar);
+// var res = Vue.compile('<div class="peper-snackbar"><div class="row middle-xs"><div class="col-xs"><div class="text-content">{{msg}}</div></div><div style="margin-left: auto;"><flat-button class="accent" type="button" v-ripple>{{button}}</flat-button></div></div></div>');
+// new Vue({
+//     data: {
+//         msg: 'hello'
+//     },
+//     render: res.render,
+//     staticRenderFns: res.staticRenderFns
+// });
