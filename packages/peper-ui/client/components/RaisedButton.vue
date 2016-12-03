@@ -37,6 +37,7 @@ export default {
 
             $el.on("touchstart click", function() {
                 var $this =$(this);
+                self.$emit('click');
                 $this.trigger("mouseleave");
                 $this.blur();
                 $this.addClass("hover");

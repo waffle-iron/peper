@@ -42,7 +42,7 @@
                 <switches class="blue" v-model="test"></switches>
                 <switches class="blue" v-model="test" :disabled="true"></switches>
                 {{test}}
-                <flat-button type="button"  v-on:click="tryAppend">Nizul Zaim</flat-button>
+                <flat-button type="button"  v-on:click="tryAppend" v-ripple>Nizul Zaim</flat-button>
             </div>
             <snackbar :msg="msgObj.msg" :button-text="msgObj.buttonText" @button-click="helloWorld" v-model="showMsg"></snackbar>
         </div>
@@ -73,6 +73,8 @@
                 this.msgObj.msg = "Hello World";
                 this.msgObj.buttonText = "Retry";
                 this.showMsg=true;
+                this.test = !this.test;
+                console.log("hello");
             },
             helloWorld() {
                 console.log("From Index.vue");
