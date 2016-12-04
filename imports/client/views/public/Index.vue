@@ -31,7 +31,7 @@
                 </page-container>
             </div>
             <div class="background-grey-200">
-                <page-container class="font-title font-center font-light no-margin">
+                <page-container class="font-title font-center font-light">
                     <div class="row center-xs">
                         <div class="col-sm-12" style="padding-top: 40px; padding-bottom: 40px;">
                             <img src="/packages/skynightz93_peper-ui/client/img/devsignmy.svg" style="max-width: 150px; transform: translateZ(0)" />                            Peper project are now being maintained by Devsign Studio, one of small team from Malaysia aim
@@ -111,6 +111,12 @@
                         </div>
                     </cards>
                 </page-container>
+            </div>
+            <div style="height: 1900px;">
+                <checkbox v-model="test"></checkbox>
+                <checkbox v-model="test"></checkbox>
+                <checkbox v-model="test"></checkbox>
+                <checkbox v-model="test" :disabled="true"></checkbox>
             </div>
             <!-- <div style="height: 40px;"></div> 
             <div style="height: 1900px;">
