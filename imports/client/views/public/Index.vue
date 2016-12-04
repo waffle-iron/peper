@@ -114,9 +114,13 @@
             </div>
             <div style="height: 1900px;">
                 <checkbox v-model="test"></checkbox>
-                <checkbox v-model="test"></checkbox>
+                <checkbox check-icon="heart" uncheck-icon="heart-outline" v-model="test"></checkbox>
                 <checkbox v-model="test"></checkbox>
                 <checkbox v-model="test" :disabled="true"></checkbox>
+                
+                <radio v-model="radioValue" name="color" val="Red"></radio>
+                <radio v-model="radioValue" name="color" val="Blue"></radio>
+                <radio v-model="radioValue" name="color" val="Green"></radio>
             </div>
             <!-- <div style="height: 40px;"></div> 
             <div style="height: 1900px;">
@@ -140,6 +144,7 @@
             return {
                 show: false,
                 test: true,
+                radioValue: "",
                 showMsg: false,
                 msgObj: {msg: "", buttonText: "OK"},
             }
