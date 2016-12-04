@@ -35,6 +35,7 @@ export default {
         },
         thumbOnClick(el) {
             var $el = $(this.$refs.ripple);
+            this.$emit("click");
             $el.addClass("active");
             $el.one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function (event) {
                 $el.removeClass("active");
