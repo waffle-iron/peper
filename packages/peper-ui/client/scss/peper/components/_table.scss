@@ -72,6 +72,9 @@ table {
                         float: none;
                         display: inline-block;
                         overflow: hidden;
+                        .mdi {
+                            font-size: 18px;
+                        }
                     }
                 }
             }
