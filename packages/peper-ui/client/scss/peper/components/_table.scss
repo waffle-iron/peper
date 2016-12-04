@@ -44,6 +44,7 @@ table {
             @include transition(all 0.2s $sharpCurve);
             td {
                 padding: 12px;
+                padding-top: 11px;
                 border-spacing: 0;
                 font-size: 13px;
                 border-top: 1px solid $color-grey-200;
@@ -57,6 +58,21 @@ table {
                 }
                 &.td-number {
                     text-align: right;
+                }
+                &.td-action {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    overflow-y: hidden;
+                    text-align: right;
+                    .peper-icon-button {
+                        width: 47px;
+                        height: 47px;
+                        margin: 0;
+                        margin-bottom: -8px;
+                        float: none;
+                        display: inline-block;
+                        overflow: hidden;
+                    }
                 }
             }
             &:hover {

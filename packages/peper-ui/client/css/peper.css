@@ -7684,6 +7684,7 @@ table {
       transition: all 0.2s cubic-bezier(0.4, 0, 0.6, 1); }
       table tbody tr td {
         padding: 12px;
+        padding-top: 11px;
         border-spacing: 0;
         font-size: 13px;
         border-top: 1px solid #eeeeee;
@@ -7695,6 +7696,19 @@ table {
           padding-right: 24px; }
         table tbody tr td.td-number {
           text-align: right; }
+        table tbody tr td.td-action {
+          padding-top: 0;
+          padding-bottom: 0;
+          overflow-y: hidden;
+          text-align: right; }
+          table tbody tr td.td-action .peper-icon-button {
+            width: 47px;
+            height: 47px;
+            margin: 0;
+            margin-bottom: -8px;
+            float: none;
+            display: inline-block;
+            overflow: hidden; }
       table tbody tr:hover {
         background: #eeeeee; }
       table tbody tr.selected {

@@ -74,7 +74,7 @@
                                                 Calcium (%)
                                             </th>
                                             <th class="th-number">
-                                                Iron (%)
+                                                
                                             </th>
                                         </tr>
                                     </thead>
@@ -87,7 +87,23 @@
                                             <td class="td-number">100</td>
                                             <td class="td-number">100</td>
                                             <td class="td-number">100</td>
+                                            <td class="td-action">
+                                                <icon-button name="pencil" class="color-grey-600" v-ripple></icon-button>
+                                                <icon-button name="pencil" class="color-grey-600" v-ripple></icon-button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kitkat</td>
                                             <td class="td-number">100</td>
+                                            <td class="td-number">100</td>
+                                            <td class="td-number">100</td>
+                                            <td class="td-number">100</td>
+                                            <td class="td-number">100</td>
+                                            <td class="td-number">100</td>
+                                            <td class="td-action">
+                                                <icon-button name="pencil" class="color-grey-600" v-ripple></icon-button>
+                                                <icon-button name="pencil" class="color-grey-600" v-ripple></icon-button>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
