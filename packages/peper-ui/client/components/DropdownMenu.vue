@@ -114,7 +114,7 @@ export default {
         self.$nextTick(function() {
             menuPosition();
 
-            $(window).on("resize",function() {
+            $(document).on("resize",function() {
                 menuPosition();
             })
         })
