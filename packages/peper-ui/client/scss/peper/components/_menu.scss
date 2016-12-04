@@ -9,37 +9,32 @@
     position: relative;
     z-index: 3000;
     &.showOnTrigger {
-        visibility:hidden;
+        visibility: hidden;
         position: fixed;
-        @include transform(translateZ(0) scale(0,0));
+        @include transform(translateZ(0) scale(0, 0));
         @include renderIssue();
-        opacity:0;
+        opacity: 0;
         @include transition((all 0.2s $decelerationCurve, opacity 0.2s $standardCurve));
         @include transform-origin(0% 100%);
         &.show {
-            @include transform(translateZ(0) scale(1,1));
+            @include transform(translateZ(0) scale(1, 1));
             visibility: visible;
             opacity: 1;
         }
-
         &.left.bottom {
             @include transform-origin(0% 0%);
         }
-
         &.left.top {
             @include transform-origin(0% 100%);
         }
-
         &.right.bottom {
             @include transform-origin(100% 0%);
         }
-
         &.right.top {
             @include transform-origin(100% 100%);
         }
     }
-
-    & > .peper-menu-item {
+    &>.peper-menu-item {
         height: 40px;
         width: 100%;
         padding: 8px 16px;
@@ -51,15 +46,13 @@
         &:hover {
             background: rgba(#000, 0.05);
         }
-
         &.divider {
             background: $color-grey-200;
             height: 1px;
             margin: 6px 0;
-            padding:0;
+            padding: 0;
             pointer-events: none;
         }
-
         .mdi {
             float: left;
             vertical-align: middle;
@@ -70,13 +63,10 @@
             width: 18px;
             height: 18px;
         }
-
         &.disabled {
             opacity: 0.5;
             pointer-events: none;
-
-            .mdi {
-            }
+            .mdi {}
         }
     }
 }

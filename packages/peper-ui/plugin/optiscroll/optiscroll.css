@@ -19,7 +19,8 @@
     -webkit-overflow-scrolling: touch
 }
 
-.optiscroll-v, .optiscroll-h {
+.optiscroll-v,
+.optiscroll-h {
     position: absolute;
     visibility: hidden;
     z-index: 2;
@@ -37,11 +38,13 @@
     bottom: 0
 }
 
-.optiscroll.has-vtrack>.optiscroll-v, .optiscroll.has-htrack>.optiscroll-h {
+.optiscroll.has-vtrack>.optiscroll-v,
+.optiscroll.has-htrack>.optiscroll-h {
     visibility: visible
 }
 
-.optiscroll-vtrack, .optiscroll-htrack {
+.optiscroll-vtrack,
+.optiscroll-htrack {
     display: block;
     position: absolute;
     opacity: 1;
@@ -72,7 +75,8 @@
     right: 8px
 }
 
-.optiscroll-vtrack, .optiscroll-htrack {
+.optiscroll-vtrack,
+.optiscroll-htrack {
     background: rgba(0, 0, 0, 0.2);
     opacity: 0
 }
@@ -87,6 +91,7 @@
     bottom: 4px
 }
 
-.optiscroll:hover>.optiscroll-v .optiscroll-vtrack, .optiscroll:hover>.optiscroll-h .optiscroll-htrack {
+.optiscroll:hover>.optiscroll-v .optiscroll-vtrack,
+.optiscroll:hover>.optiscroll-h .optiscroll-htrack {
     opacity: 1
 }

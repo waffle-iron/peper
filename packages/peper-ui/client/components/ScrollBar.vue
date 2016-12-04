@@ -10,10 +10,7 @@
 export default {
     mounted() {
         var self = this;
-        self.$nextTick(function() {
-            var myOptiscrollInstance = new Optiscroll(self.$el);
-            // myOptiscrollInstance.update();
-        })
+        var myOptiscrollInstance = new Optiscroll(self.$el);
     },
 }
 </script>

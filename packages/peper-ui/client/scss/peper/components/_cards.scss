@@ -2,10 +2,9 @@
     @include box-shadow($z1-shadow);
     background: $color-white;
     @include border-radius(2px);
-    overflow:hidden;
+    overflow: hidden;
     margin-bottom: 12px;
     @include transition(all 0.2s $sharpCurve);
-
     &-image {
         position: relative;
         overflow: hidden;
@@ -13,16 +12,15 @@
         display: block;
         text-decoration: none;
         @include transform(translateZ(0));
-        &  img {
+        & img {
             position: absolute;
             top: 50%;
             left: 50%;
             width: 100%;
             max-width: 100%;
-            @include transform(translate3D(-50%,-50%, 0));
+            @include transform(translate3D(-50%, -50%, 0));
             z-index: 0;
         }
-
         &-overlay {
             position: absolute;
             width: 100%;
@@ -33,19 +31,16 @@
             background: $color-black;
             z-index: 1;
         }
-
         .ripple-circle {
             z-index: 1;
         }
-
         &.follow-height {
-            &  img {
+            & img {
                 height: 100%;
                 width: auto;
                 max-width: initial;
             }
         }
-
         .peper-cards-content {
             position: absolute;
             bottom: 0;
@@ -57,36 +52,30 @@
                 background: $color-black;
             }
         }
-
         &.ratio-1-1 {
             padding-bottom: 100%;
         }
     }
-
     &-content {
         @include clearfix();
         &.has-padding {
             padding: 8px 12px;
         }
-
         // .content-overlay {
         // }
-
         &.profile {
-             & .peper-avatar {
+            & .peper-avatar {
                 width: 40px;
                 height: 40px;
                 line-height: 40px;
                 float: left;
                 margin-right: 12px;
             }
-
             & .profile-title {
                 @include typography-subhead;
                 font-weight: 500;
                 line-height: 20px;
             }
-
             & .profile-subhead {
                 font-weight: 400;
                 line-height: 20px;
@@ -94,7 +83,6 @@
             }
         }
     }
-
     &-action {
         position: relative;
         width: 100%;
@@ -103,6 +91,4 @@
         padding-left: 4px;
         padding-right: 4px;
     }
-
-   
 }

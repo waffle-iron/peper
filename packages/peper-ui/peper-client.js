@@ -6,6 +6,7 @@ import './client/directives/v-ripple';
 import './client/directives/v-depth';
 import './client/directives/v-sidenav';
 import './client/directives/v-clamp';
+// import './client/directives/v-move-dom';
 
 $.fn.isOnScreen = function() {
     var win = $(window);
